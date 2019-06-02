@@ -1,0 +1,490 @@
+{
+    "pricelist": {
+        "type": "flex",
+        "altText": "INEXBOTS STORE",
+        "contents": {
+            "type": "bubble",
+            "styles": {
+                "header": {
+                    "backgroundColor": "#000000"
+                },
+                "hero": {
+                    "backgroundColor": "#000000"
+                },
+                "body": {
+                    "backgroundColor": "#000000",
+                    "separator": true,
+                    "separatorColor": "#000080"
+                },
+                "footer": {
+                    "backgroundColor": "#000000",
+                    "separator": true
+                }
+            },
+            "hero": {
+                "type": "image",
+                "url": "https://z-m-scontent.fcgk3-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/51691304_1868204569955031_2146220437988704256_o.jpg?_nc_cat=103&efg=eyJpIjoibyJ9&_nc_eui2=AeH2ckLWYQHsnNZ_h-dxkaE6z8BLc-ped-MztW4ZIVdUV-ntVbUtpxp-yrIWasU0oZ8NiwTRmKSqr0DSF8HXmDE7MZQ7aCk7ff-H_i1Gzo8g7w&_nc_ad=z-m&_nc_cid=1101&_nc_zor=9&_nc_ht=z-m-scontent.fcgk3-1.fna&oh=0f1ff9c6349023cf62345295df40deca&oe=5CFFF2F3",
+                "size": "full",
+                "aspectRatio": "3:1"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "PRICE LIST",
+                        "weight": "bold",
+                        "color": "#1DB446",
+                        "size": "sm"
+                    },
+                    {
+                        "type": "text",
+                        "text": "InexBots Store",
+                        "weight": "bold",
+                        "size": "xxl",
+                        "margin": "md"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Bot Template, Bot war, Bot protect \nsiapkan akun sendiri.",
+                        "size": "xs",
+                        "color": "#aaaaaa",
+                        "wrap": true
+                    },
+                    {
+                        "type": "separator",
+                        "margin": "xxl"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "margin": "xxl",
+                        "spacing": "sm",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "horizontal",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "1 bot Template",
+                                        "size": "sm",
+                                        "color": "#aaaaaa",
+                                        "flex": 0
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Rp.100,000",
+                                        "size": "sm",
+                                        "color": "#10CF08",
+                                        "align": "end"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "box",
+                                "layout": "horizontal",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "3 bot",
+                                        "size": "sm",
+                                        "color": "#aaaaaa",
+                                        "flex": 0
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Rp.100,000",
+                                        "size": "sm",
+                                        "color": "#10CF08",
+                                        "align": "end"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "box",
+                                "layout": "horizontal",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "5 bot",
+                                        "size": "sm",
+                                        "color": "#aaaaaa",
+                                        "flex": 0
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Rp.250,000",
+                                        "size": "sm",
+                                        "color": "#10CF08",
+                                        "align": "end"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "box",
+                                "layout": "horizontal",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "7 bot",
+                                        "size": "sm",
+                                        "color": "#aaaaaa",
+                                        "flex": 0
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Rp.280,000",
+                                        "size": "sm",
+                                        "color": "#10CF08",
+                                        "align": "end"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "box",
+                                "layout": "horizontal",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "9 bot",
+                                        "size": "sm",
+                                        "color": "#aaaaaa",
+                                        "flex": 0
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Rp.350,000",
+                                        "size": "sm",
+                                        "color": "#10CF08",
+                                        "align": "end"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "box",
+                                "layout": "horizontal",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "11 bot",
+                                        "size": "sm",
+                                        "color": "#aaaaaa",
+                                        "flex": 0
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Rp.450,000",
+                                        "size": "sm",
+                                        "color": "#10CF08",
+                                        "align": "end"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "separator",
+                        "margin": "xxl"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "margin": "md",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "PEMESANAN BOT",
+                                "size": "xs",
+                                "color": "#10CF08",
+                                "flex": 0
+                            },
+                            {
+                                "type": "text",
+                                "text": "PEMESANAN VPS",
+                                "color": "#10CF08",
+                                "size": "xs",
+                                "align": "end"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "margin": "md",
+                        "contents": [
+                            {
+                                "type": "spacer",
+                                "size": "xl"
+                            },
+                            {
+                                "type": "button",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "KLIK DISINI",
+                                    "uri": "line://ti/p/~denjaka-inexx"
+                                },
+                                "style": "primary",
+                                "color": "#10CF08"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "help": {
+        "type": "flex",
+        "altText": "TOLOOOOONGGGG!!",
+        "contents": {
+            "type": "bubble",
+            "styles": {
+                "header": {
+                    "backgroundColor": "#000000",
+                    "separator": true,
+                    "separatorColor": "#000000"
+                },
+                "hero": {
+                    "backgroundColor": "#000000",
+                    "separator": true,
+                    "separatorColor": "#000000"
+                },
+                "body": {
+                    "backgroundColor": "#000000",
+                    "separator": true,
+                    "separatorColor": "#000000"
+                },
+                "footer": {
+                    "backgroundColor": "#000000",
+                    "separator": true,
+                    "separatorColor": "#000000"
+                }
+            },
+            "hero": {
+                "type": "image",
+                "url": "https://z-m-scontent.fcgk3-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/51691304_1868204569955031_2146220437988704256_o.jpg?_nc_cat=103&efg=eyJpIjoibyJ9&_nc_eui2=AeH2ckLWYQHsnNZ_h-dxkaE6z8BLc-ped-MztW4ZIVdUV-ntVbUtpxp-yrIWasU0oZ8NiwTRmKSqr0DSF8HXmDE7MZQ7aCk7ff-H_i1Gzo8g7w&_nc_ad=z-m&_nc_cid=1101&_nc_zor=9&_nc_ht=z-m-scontent.fcgk3-1.fna&oh=0f1ff9c6349023cf62345295df40deca&oe=5CFFF2F3",
+                "size": "full",
+                "aspectRatio": "3:1"
+            },
+            "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "INEXBOTS_TEAM",
+                        "color": "#F7141F"
+                        
+                    }
+                ]
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "SELFBOT | SELFPRO | PROTECT",
+                        "color": "#F7141F"
+                    }
+                ]
+            },
+            "footer": {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "button",
+                                "style": "secondary",
+                                "color": "#BE1700",
+                                "height": "sm",
+                                "gravity": "center",
+                                "flex": 1,
+                                "action": {
+                                    "type": "uri",
+                                    "label": "HELP 2",
+                                    "uri": "line://app/1623679774-k9nBDB6b?type=text&text=help"
+                                }
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#002727"
+                            },
+                            {
+                                "type": "button",
+                                "style": "secondary",
+                                "color": "#BE1700",
+                                "height": "sm",
+                                "gravity": "center",
+                                "flex": 1,
+                                "action": {
+                                    "type": "uri",
+                                    "label": "ME",
+                                    "uri": "line://app/1623679774-k9nBDB6b?type=text&text=me"
+                                }
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#002727"
+                            },
+                            {
+                                "type": "button",
+                                "style": "secondary",
+                                "color": "#BE1700",
+                                "height": "sm",
+                                "gravity": "center",
+                                "flex": 1,
+                                "action": {
+                                    "type": "uri",
+                                    "label": "PENDINGLIST",
+                                    "uri": "line://app/1623679774-k9nBDB6b?type=text&text=memberpict"
+                                }
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#002727"
+                            },
+                            {
+                                "type": "button",
+                                "style": "secondary",
+                                "color": "#BE1700",
+                                "height": "sm",
+                                "gravity": "center",
+                                "flex": 1,
+                                "action": {
+                                    "type": "uri",
+                                    "label": "MYBOTS",
+                                    "uri": "line://app/1623679774-k9nBDB6b?type=text&text=galeri"
+                                }
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#002727"
+                            },
+                            {
+                                "type": "button",
+                                "style": "secondary",
+                                "color": "#BE1700",
+                                "height": "sm",
+                                "gravity": "center",
+                                "flex": 1,
+                                "action": {
+                                    "type": "uri",
+                                    "label": "PRICELIST",
+                                    "uri": "line://app/1623679774-k9nBDB6b?type=text&text=price"
+                                }
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#002727"
+                            },
+                            {
+                                "type": "button",
+                                "style": "secondary",
+                                "color": "#BE1700",
+                                "height": "sm",
+                                "gravity": "center",
+                                "flex": 1,
+                                "action": {
+                                    "type": "uri",
+                                    "label": "MENTION",
+                                    "uri": "line://app/1623679774-k9nBDB6b?type=text&text=mention"
+                                }
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#002727"
+                            },
+                            {
+                                "type": "button",
+                                "style": "secondary",
+                                "color": "#BE1700",
+                                "height": "sm",
+                                "gravity": "center",
+                                "flex": 1,
+                                "action": {
+                                    "type": "uri",
+                                    "label": "SPEED",
+                                    "uri": "line://app/1623679774-k9nBDB6b?type=text&text=speed"
+                                }
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#002727"
+                            },
+                            {
+                                "type": "button",
+                                "style": "secondary",
+                                "color": "#BE1700",
+                                "height": "sm",
+                                "gravity": "center",
+                                "flex": 1,
+                                "action": {
+                                    "type": "uri",
+                                    "label": "PROFILE",
+                                    "uri": "line://app/1623679774-k9nBDB6b?type=text&text=profil"
+                                }
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#002727"
+                            },
+                            {
+                                "type": "button",
+                                "style": "secondary",
+                                "color": "#BE1700",
+                                "height": "sm",
+                                "gravity": "center",
+                                "flex": 1,
+                                "action": {
+                                    "type": "uri",
+                                    "label": "CEK LIMIT",
+                                    "uri": "line://app/1623679774-k9nBDB6b?type=text&text=cek"
+                                }
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#002727"
+                            },
+                            {
+                                "type": "button",
+                                "style": "secondary",
+                                "color": "#BE1700",
+                                "height": "sm",
+                                "gravity": "center",
+                                "flex": 1,
+                                "action": {
+                                    "type": "uri",
+                                    "label": "GRUPLIST",
+                                    "uri": "line://app/1623679774-k9nBDB6b?type=text&text=movie"
+                                }
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#002727"
+                            },
+                            {
+                                "type": "button",
+                                "style": "secondary",
+                                "color": "#BE1700",
+                                "height": "sm",
+                                "gravity": "top",
+                                "flex": 1,
+                                "action": {
+                                    "type": "uri",
+                                    "label": "LIST MEMBER",
+                                    "uri": "line://app/1623679774-k9nBDB6b?type=text&text=memberlist"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+    

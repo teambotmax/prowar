@@ -26,38 +26,38 @@ Menu = json.load(Helps)
 #========================================================================
 #========================================================================
 print("\n               [SB]")
-me = LINE("Email","Passwd")
+me = LINE("EMAIL","PASSWD")
 me.log("Auth Token : " + str(me.authToken))
 meProfile = me.getProfile()
 meSettings = me.getSettings()
 meM = meProfile.mid
 print("\n              [kicker1]")
-kk1 = LINE("Email","Passwd")
+kk1 = LINE("EMAIL","PASSWD")
 kk1.log("Auth Token : " + str(kk1.authToken))
 kk1Profile = kk1.getProfile()
 Denjaka1 = kk1Profile.mid
 print("\n             [Kicker2]")
-kk2 = LINE("Email","Passwd")
+kk2 = LINE("EMAIL","PASSWD")
 kk2.log(" Auth Token : " + str(kk2.authToken))
 kk2Profile = kk2.getProfile()
 Denjaka2 = kk2Profile.mid
 print("\n              [Kicker3]")
-kk3 = LINE("Email","Passwd")
+kk3 = LINE("EMAIL","PASSWD")
 kk3.log("Auth Token : " + str(kk3.authToken))
 kk3Profile = kk3.getProfile()
 Denjaka3 = kk3Profile.mid
 print("\n              [Kicker4]")
-kk4 = LINE("Email","Passwd")
+kk4 = LINE("EMAIL","PASSWD")
 kk4.log("Auth Token : " + str(kk4.authToken))
 kk4Profile = kk4.getProfile()
 Denjaka4 = kk4Profile.mid
 print("\n              [Kicker5]")
-kk5 = LINE("Email","Passwd")
+kk5 = LINE("EMAIL","PASSWD")
 kk5.log("Auth Token : " + str(kk5.authToken))
 kk5Profile = kk5.getProfile()
 Denjaka5 = kk5Profile.mid
 print("\n              [ANTI JS]")
-jss = LINE("Email","Passwd")
+jss = LINE("EMAIL","PASSWD")
 jss.log("Auth Token : " + str(jss.authToken))
 jssProfile = jss.getProfile()
 Antijs = jssProfile.mid
@@ -1337,7 +1337,7 @@ def serviceX(rank):
                     if text is None:
                         return
                     else:
-                        InexBotsList = SqL_R
+                        InexBotsList = SqL_R(text)
                         if InexBotsList == Menu["1"]:
                           if Dari in Owner or Dari in meM:
                             Res= extras+"╭━──────────────━╮\n│➢      xᴛᴄ ᴍᴇɴᴜ\n╰━──────────────━╯\n╭━──────────────━╮\n"

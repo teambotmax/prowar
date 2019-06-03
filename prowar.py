@@ -2548,7 +2548,7 @@ def serviceX(rank):
                         for mention in mentionees:
                             if meM in mention["M"]:
                                 if InexBots["Respon"] == True:
-                                    sendMention(R, D, "\n",respontags["Auto_text"])
+                                    me.sendMessage(R, respontags["Auto_text"])
                                     me.sendContact(R, D)
                                 break
                 if msg.contentType == 0 and D not in meM and msg.toType == 2:

@@ -64,14 +64,14 @@ Antijs = jssProfile.mid
 print("\n=================================================================")
 print("ɪɴᴇxʙᴏᴛs.ʟɪɴᴇ ᴠᴇʀ.8.14.2")
 print("ɪɴᴇxʙᴏᴛs.ʟɪɴᴇ ᴠᴇʀ.8.14.2")
-print("     ᴄʀᴇᴀᴛᴏʀ\n   ʙʏ\n     ᴅᴇɴᴊᴀᴋᴀ")
+print("     ᴄʀᴇᴀᴛᴏʀ\n       ʙʏ\n     ᴅᴇɴᴊᴀᴋᴀ")
 print("ɪɴᴇxʙᴏᴛs.ᴠᴇʀsɪᴏɴ ʙᴏᴛᴡᴀʀ")
 print("=================================================================")
 oepoll = OEPoll(me)
 call = me
 Admin = InexBots["MID"]
 Owner = ["u0db2241f66d1435702fdde3040923396"]
-Stiles = "│➢"
+Stiles = "│﷽➢"
 InexWars = [meM,Denjaka1,Denjaka2,Denjaka3,Denjaka4,Denjaka5,Antijs]
 Jaka = [me,kk1,kk2,kk3,kk4,kk5,jss]
 msg_dict = {}
@@ -299,14 +299,16 @@ def attck(grup, target):
 def ajs(grup, target):
     print("DEP JS KICK MUSUH")
     try:
-        asd= jss.kickoutFromGroup(grup, [target])
+        asd= jss.acceptGroupInvitation(grup)
+        asd= jss.kickoutFromGroup(grup, [op.param2])
         asd= jss.inviteIntoGroup(grup, InexWars)
         if asd != None:
             mbutfaild
     except:
         try:
+            asd= jss.acceptGroupInvitation(grup)
             asd= jss.inviteIntoGroup(grup, InexWars)
-            asd= jss.kickoutFromGroup(grup, [target])
+            asd= jss.kickoutFromGroup(grup, [op.param2])
             if asd != None:
                 mbutfaild
         except:
@@ -495,27 +497,26 @@ def black(target):
     if rank.param2 in InexBots["blacklist"]:
         ["blacklist"].append(target)
 
-warKey = """ɖɛռʝǟӄǟ
-╭━──────────────━╮
+warKey = """╭━──────────────━╮
 │➢      xᴛᴄ ᴍᴇɴᴜ
 ╰━──────────────━╯
 ╭━──────────────━╮
-│➢ ᴍᴇ
+│➢ ᴍᴀᴀғ [ᴅɪsᴘʟᴀʏɴᴀᴍᴇ]
 │➢ ᴍʏʙᴏᴛ
-│➢ ʙᴀᴄᴋᴜᴘ
+│➢ ᴘᴍ ᴏɴ/ᴏғғ
 │➢ sᴘᴇᴇᴅ-sᴘ
 │➢ ᴋᴇʟᴜᴀʀ(,)/ᴍᴀsᴜᴋ(.)
 │➢ ᴛᴀɢ/ɪɴᴇx
 │➢ ᴘɪɴɢ
 │➢ ᴄᴇᴋ
 │➢ sᴏʀʏ @
-│➢ ᴘʀᴀɴᴋ ɴ ᴄʟɪɴɢ
+│➢ ᴀᴅᴍɪɴᴀᴅᴅ @/ ᴀᴅᴍɪɴᴅᴇʟʟ @
 │➢ ʀᴇᴍᴏᴠᴇ ᴄʜᴀᴛ
-│➢ 1ᴜᴘ-5ᴜᴘ
-│➢ 1ɴᴀᴍᴇ-5ɴᴀᴍᴇ
-│➢ ʙᴀɴʟɪsᴛ
-│➢ ᴄʟᴇᴀʀʙᴀɴ
-│➢ ʀᴇғʀᴇsʜ
+│➢ ʙᴏᴛ ᴘɪᴄᴛ
+│➢ ʙᴏᴛɴᴀᴍᴇ
+│➢ ᴘʀᴏ ᴏɴ/ᴏғғ
+│➢ ᴊs ɪɴ-ᴏᴜᴛ
+│➢ sᴛᴀʏ - ɴᴀɴɢᴋʀɪɴɢ
 ╰━──────────────━╯
 ╭━──────────────━╮
 ├━────[Creator]───━
@@ -1098,7 +1099,25 @@ def serviceX(rank):
                                     try:
                                         kk5.inviteIntoGroup(Rumahku,[Antijs])
                                         kk5.kickoutFromGroup(Rumahku,[Musuhku])
-                                    except:pass
+                                    except:
+                                        try:
+                                            Z = me.getGroup(Rumahku)
+                                            Z.preventedJoinByTicket = False
+                                            Terbuka = me.reissueGroupTicket(Rumahku)
+                                            kk1.acceptGroupInvitationByTicket(Rumahku,Terbuka)
+                                            kk2.acceptGroupInvitationByTicket(Rumahku,Terbuka)
+                                            kk3.acceptGroupInvitationByTicket(Rumahku,Terbuka)
+                                            kk4.acceptGroupInvitationByTicket(Rumahku,Terbuka)
+                                            kk5.acceptGroupInvitationByTicket(Rumahku,Terbuka)
+                                            jss.acceptGroupInvitationByTicket(Rumahku,Terbuka)
+                                            X = jss.getGroup(Rumahku)
+                                            X.preventedJoinByTicket = True
+                                            jss.updateGroup(X)
+                                            jss.sendMessage(Rumahku, "Anjayyyy")
+                                            jss.kickoutFromGroup(Rumahku,[Musuhku])
+                                            jss.leaveGroup(Rumahku)
+                                            kk.inviteIntoGroup(Rumahku,[Antijs])
+                                        except:pass
 
         if rank.type == 19 or rank.type == 32:
             if Owner in Temanku:
@@ -1320,9 +1339,9 @@ def serviceX(rank):
             Pesan = msg.to
             Dari = msg._from
             Gr = Rumahku
-            OperInexBotsList = InexBots["text"].title()
+            InexBotsLists = InexBots["text"].title()
             if InexBots["key"] == False:
-                 OperInexBotsList = ''
+                 InexBotsLists = ''
             if msg.toType == 0 or msg.toType == 1 or msg.toType == 2:
                 if msg.toType == 0:
                     if Dari != me.profile.mid:
@@ -1341,72 +1360,72 @@ def serviceX(rank):
                         if InexBotsList == Menu["1"]:
                           if Dari in Owner or Dari in meM:
                             Res= extras+"╭━──────────────━╮\n│➢      xᴛᴄ ᴍᴇɴᴜ\n╰━──────────────━╯\n╭━──────────────━╮\n"
-                            Res+= Stiles+InexBotsList+Menu["1"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["2"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["3"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["4"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["5"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["6"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["7"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["8"]+" *porn\n"
-                            Res+= Stiles+InexBotsList+Menu["9"]+" *judul\n"
-                            Res+= Stiles+InexBotsList+Menu["10"]+" *tags\n"
-                            Res+= Stiles+InexBotsList+Menu["11"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["12"]+" *txt/txt/txt\n"
-                            Res+= Stiles+InexBotsList+Menu["13"]+" *text\n"
-                            Res+= Stiles+InexBotsList+Menu["14"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["15"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["16"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["17"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["18"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["19"]+" *tags\n"
-                            Res+= Stiles+InexBotsList+Menu["20"]+" *tags\n"
-                            Res+= Stiles+InexBotsList+Menu["21"]+" *tags\n"
-                            Res+= Stiles+InexBotsList+Menu["22"]+" *tags\n"
-                            Res+= Stiles+InexBotsList+Menu["23"]+" *tags\n"
-                            Res+= Stiles+InexBotsList+Menu["24"]+" *tags\n"
-                            Res+= Stiles+InexBotsList+Menu["25"]+" *text\n"
-                            Res+= Stiles+InexBotsList+Menu["26"]+" *01-02-1995\n"
-                            Res+= Stiles+InexBotsList+Menu["27"]+" *id ig\n"
-                            Res+= Stiles+InexBotsList+Menu["28"]+" *id smule\n"
-                            Res+= Stiles+InexBotsList+Menu["29"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["30"]+" *text\n"
-                            Res+= Stiles+InexBotsList+Menu["31"]+" *text\n"
-                            Res+= Stiles+InexBotsList+Menu["32"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["33"]+" *text\n"
-                            Res+= Stiles+InexBotsList+Menu["34"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["35"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["36"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["37"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["38"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["39"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["40"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["41"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["42"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["43"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["44"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["45"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["46"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["47"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["48"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["49"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["50"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["51"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["52"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["53"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["54"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["55"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["56"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["57"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["58"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["59"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["60"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["61"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["62"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["63"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["64"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["65"]+"\n"
-                            Res+= Stiles+InexBotsList+Menu["66"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["1"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["2"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["3"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["4"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["5"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["6"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["7"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["8"]+" *porn\n"
+                            Res+= Stiles+InexBotsLists+Menu["9"]+" *judul\n"
+                            Res+= Stiles+InexBotsLists+Menu["10"]+" *tags\n"
+                            Res+= Stiles+InexBotsLists+Menu["11"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["12"]+" *txt/txt/txt\n"
+                            Res+= Stiles+InexBotsLists+Menu["13"]+" *text\n"
+                            Res+= Stiles+InexBotsLists+Menu["14"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["15"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["16"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["17"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["18"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["19"]+" *tags\n"
+                            Res+= Stiles+InexBotsLists+Menu["20"]+" *tags\n"
+                            Res+= Stiles+InexBotsLists+Menu["21"]+" *tags\n"
+                            Res+= Stiles+InexBotsLists+Menu["22"]+" *tags\n"
+                            Res+= Stiles+InexBotsLists+Menu["23"]+" *tags\n"
+                            Res+= Stiles+InexBotsLists+Menu["24"]+" *tags\n"
+                            Res+= Stiles+InexBotsLists+Menu["25"]+" *text\n"
+                            Res+= Stiles+InexBotsLists+Menu["26"]+" *01-02-1995\n"
+                            Res+= Stiles+InexBotsLists+Menu["27"]+" *id ig\n"
+                            Res+= Stiles+InexBotsLists+Menu["28"]+" *id smule\n"
+                            Res+= Stiles+InexBotsLists+Menu["29"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["30"]+" *text\n"
+                            Res+= Stiles+InexBotsLists+Menu["31"]+" *text\n"
+                            Res+= Stiles+InexBotsLists+Menu["32"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["33"]+" *text\n"
+                            Res+= Stiles+InexBotsLists+Menu["34"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["35"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["36"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["37"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["38"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["39"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["40"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["41"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["42"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["43"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["44"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["45"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["46"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["47"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["48"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["49"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["50"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["51"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["52"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["53"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["54"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["55"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["56"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["57"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["58"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["59"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["60"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["61"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["62"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["63"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["64"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["65"]+"\n"
+                            Res+= Stiles+InexBotsLists+Menu["66"]+"\n"
                             Res+= "├━──────────────━─\n├➢➢CHECK BOT\n├━──────────────━─\n"
                             if InexBots["Add"] == True: Res+= Stiles+" autoadd->『on』\n"
                             else: Res+= Stiles+" autoadd->『off』\n"
@@ -1426,6 +1445,7 @@ def serviceX(rank):
                             Res+= "├━────[SelfName]───━\n"+Stiles+meProfile.displayName+"\n"
                             me.sendMessage(Line_Apikey,Devert)
                             me.sendMessage(Pesan, str(Res)+Stiles+" https://line.me/ti/p/~denjaka-inexx\n╰━──────────────━╯")
+                            me.sendMessage(Pesan, extras+str(warKey))
                         if InexBotsList == Menu["2"]:
                           if Dari in Owner or Dari in meM:
                             me.sendContact(Pesan,meM)
@@ -2047,7 +2067,7 @@ def serviceX(rank):
                             except:me.sendMessage(Pesan,"SETTING ALL IN OFFLINE")
                         if InexBotsList == "menu" or InexBotsList == "key":
                           if Dari in Owner or Dari in meM:
-                              me.sendMessage(Pesan, str(warKey))
+                              me.sendMessage(Pesan, extras+str(warKey))
                               me.sendMessage(Line_Apikey,Devert)
                         if InexBotsList == "mybot" or InexBotsList == "Mybot":
                           if Dari in Owner or Dari in meM:
@@ -2093,6 +2113,10 @@ def serviceX(rank):
                             gg = me.getGroup(Pesan)
                             jss.leaveGroup(Pesan)
                         if InexBotsList == "stay" or InexBotsList == "ajs":
+                          if Dari in Owner or Dari in meM:
+                              group = me.getGroup(Pesan)
+                              me.inviteIntoGroup(Pesan, [Antijs])
+                        if InexBotsList == "nangkring":
                           if Dari in Owner or Dari in meM:
                             try:
                                 me.inviteIntoGroup(Pesan, [Denjaka1,Denjaka2,Denjaka3,Denjaka4,Denjaka5,Antijs])
@@ -2233,9 +2257,43 @@ def serviceX(rank):
                                       print (Pesan,[ls])
                                   except:
                                       pass
-                        if InexBotsList.startswith("Maaf "):
+                        if InexBotsList.startswith("botname: "):
                           if Dari in Owner or Dari in meM:
-                              nk0 = msg.text.replace("Maaf ","")
+                              separate = InexBotsList.split(" ")
+                              string = InexBotsList.replace(separate[0] + " ","")
+                              if len(string) <= 10000000000:
+                                  profile1 = kk1.getProfile()
+                                  profile1.displayName = string
+                                  kk1.updateProfile(profile1)
+                                  kk1.sendMessage(Pesan,"Nama diganti jadi " + string + "")
+                                  profile2 = kk2.getProfile()
+                                  profile2.displayName = string
+                                  kk2.updateProfile(profile2)
+                                  kk2.sendMessage(Pesan,"Nama diganti jadi " + string + "")
+                                  profile3 = kk3.getProfile()
+                                  profile3.displayName = string
+                                  kk3.updateProfile(profile3)
+                                  kk3.sendMessage(Pesan,"Nama diganti jadi " + string + "")
+                                  profile4 = kk4.getProfile()
+                                  profile4.displayName = string
+                                  kk4.updateProfile(profile4)
+                                  kk4.sendMessage(Pesan,"Nama diganti jadi " + string + "")
+                                  profile5 = kk5.getProfile()
+                                  profile5.displayName = string
+                                  kk5.updateProfile(profile5)
+                                  kk5.sendMessage(Pesan,"Nama diganti jadi " + string + "")
+                        if InexBotsList.startswith("jsname: "):
+                          if Dari in Owner or Dari in meM:
+                              separate = InexBotsList.split(" ")
+                              string = InexBotsList.replace(separate[0] + " ","")
+                              if len(string) <= 10000000000:
+                                  profile = jss.getProfile()
+                                  profile.displayName = string
+                                  jss.updateProfile(profile)
+                                  jss.sendMessage(Pesan,"Nama diganti jadi " + string + "")
+                        if InexBotsList.startswith("maaf "):
+                          if Dari in Owner or Dari in meM:
+                              nk0 = msg.text.replace("maaf ","")
                               nk1 = nk0.lstrip()
                               nk2 = nk1.replace("@","")
                               nk3 = nk2.rstrip()
@@ -2286,27 +2344,27 @@ def serviceX(rank):
               if Dari in Owner or Dari in meM:
                   InexBots["autoJoin"] = False
                   me.sendMessage(Pesan,"join d non aktifkan.....")
-            if Denwar == "pm on":
+            if Denwar == "pm on" or Denwar == "Pm on":
               if Dari in Owner or Dari in meM:
                   InexBots["arespon"] = True
                   me.sendMessage(Pesan,"Respon pm d aktifkan.....")
-            if Denwar == "pm off":
+            if Denwar == "pm off" or Denwar == "Pm off":
               if Dari in Owner or Dari in meM:
                   InexBots["arespon"] = False
                   me.sendMessage(Pesan,"Respon pm d nonaktifkan.....")
-            if Denwar == "autoleave on":
+            if Denwar == "autoleave on" or Denwar == "Autoleave on":
               if Dari in Owner or Dari in meM:
                   InexBots["autoLeave"] = True
                   me.sendMessage(Pesan,"Leave d aktifkan.....")
-            if Denwar == "autoleave off":
+            if Denwar == "autoleave off" or Denwar == "Autoleave off":
               if Dari in Owner or Dari in meM:
                   InexBots["autoLeave"] = False
                   me.sendMessage(Pesan,"Leave d non aktifkan.....")
-            if Denwar == "admin on":
+            if Denwar == "admin on" or Denwar == "Admin on":
               if Dari in Owner or Dari in meM:
                   InexBots["addOwner"] = True
                   me.sendMessage(Pesan,"Kirim kontaknya...")
-            if Denwar == "admin off":
+            if Denwar == "admin off" or Denwar == "Admin off":
               if Dari in Owner or Dari in meM:
                   InexBots["dellOwner"] = True
                   me.sendMessage(Pesan,"Kirim kontaknya...")
@@ -2314,7 +2372,7 @@ def serviceX(rank):
               if Dari in Owner or Dari in meM:
                   InexBots["SKfoto"][meM] = True
                   me.sendMessage(Pesan,"Kirim fotonya.....")
-            if Denwar == "bot pict":
+            if Denwar == "bot pict" or Denwar == "Bot pict":
               if Dari in Owner or Dari in meM:
                   InexBots["changePicture"] = True
                   me.sendMessage(Pesan,"Kirim fotonya.....")
@@ -2493,28 +2551,24 @@ def serviceX(rank):
                                     sendMention(R, D, "\n",respontags["Auto_text"])
                                     me.sendContact(R, D)
                                 break
-                if 'MENTION' in msg.contentMetadata.keys() != None:
-                    if InexBots["arespon"] == True: 
-                        name = re.findall(r'@(\w+)', text)
+                if msg.contentType == 0 and D not in meM and msg.toType == 2:
+                    if 'MENTION' in msg.contentMetadata.keys()!= None:
+                        names = re.findall(r'@(\w+)', text)
                         mention = ast.literal_eval(msg.contentMetadata['MENTION'])
                         mentionees = mention['MENTIONEES']
                         lists = []
                         for mention in mentionees:
-                             if mention ['M'] in InexBots:
-                                contact = me.getContact(D)
-                                sendMention(D, "\n"+respontags["Auto_pM"], [D])
+                            if meM in mention["M"]:
+                                if InexBots["arespon"] == True:
+                                    #contact = me.getContact(D)
+                                    sendMention(D, "\n"+respontags["Auto_pM"], [D])
+                                break
                 if msg.contentType == 1:
                     if meM in InexBots["SKfoto"]:
                          path = me.downloadObjectMsg(R)
                          del InexBots["SKfoto"][meM]
                          me.updateProfilePicture(path)
                          me.sendMessage(R,"Foto berhasil dirubah")
-                if msg.contentType == 1:
-                    if InexBots["changePicture"] == True:
-                        path = me.downloadObjectMsg(R)
-                        InexBots["changePicture"] = False
-                        me.updateProfilePicture(path)
-                        me.sendMessage(R, "Berhasil mengubah foto profile bot")
                 if msg.contentType == 1:
                     if InexBots["changePicture"] == True:
                         path1 = kk1.downloadObjectMsg(Id)
@@ -2562,7 +2616,7 @@ def serviceX(rank):
             print ("NOTIFIED ADD CONTACT SELF")
             if InexBots["Add"] == True:
                 me.findAndAddContactsByMid(Rumahku)
-            sendMention(Rumahku, Rumahku, "Thanks For add Me ","")
+            sendMention(Rumahku, Rumahku, "тᴇяıмᴀ кᴀsıн suᴅᴀн ᴀᴅᴅ sᴀʏᴀ \nвʏ.ᴛᴇᴀᴍ ⊶ ɪɴᴇxʙᴏᴛs ⊷ \nline.me/ti/p/~denjaka-inexx ","")
         if rank.type == 15:
             Gr = Rumahku
             Cj = Musuhku
@@ -2595,20 +2649,68 @@ def serviceX(rank):
         if rank.type == 65:
             print ("UNSEND MESSAGE UNSENDER FROM MY SELF")
             if InexBots["Unsend"] == True:
-                Geting = Rumahku
-                Text_in_Destroy = Musuhku
-                if Text_in_Destroy in msg_dict:
-                    Timer = time.time()
-                    Target_Text = me.getContact(msg_dict[Text_in_Destroy]["from"])
-                    if "text" in msg_dict[Text_in_Destroy]:
-                        StartTimer = Timer - msg_dict[Text_in_Destroy]["waktu"]
-                        StartTimer = format_timespan(StartTimer)
-                        rat_ = "۞Timer unsend: {} WIB".format(StartTimer)
-                        rat_ += "✎_Text Unsend\n{}".format(msg_dict[Text_in_Destroy]["text"])
-                        me.sendMessage(Geting, "Sorry\nMy Resend your Message\n\n", str(rat_))
-                        del msg_dict[Text_in_Destroy]
-                else:
-                    me.sendMessage(Geting, "why,,,\nYou ressend message")
+                try:
+                    at = Rumahku
+                    Id = Musuhku
+                    if Id in msg_dict:
+                        if msg_dict[Id]["from"]:
+                           if msg_dict[Id]["text"] == 'Gambarnya dibawah':
+                                ginfo = me.getGroup(at)
+                                jaka = me.getContact(msg_dict[Id]["from"])
+                                zx = ""
+                                zxc = ""
+                                zx2 = []
+                                xpesan = "╭━━━━══════════════"
+                                ret_ = "\n┣☠•➤ Nama Grup : {}".format(str(ginfo.name))
+                                ret_ += "\n┣☠•➤ Waktu Dikirim : {}".format(dt_to_str(cTime_to_datetime(msg_dict[Id]["createdTime"])))
+                                ret_ += "\n╰━━━━══════════════"
+                                ry = str(jaka.displayName)
+                                pesan = ''
+                                pesan2 = pesan+"{} \n".format(str(jaka.displayName))
+                                xlen = str(len(zxc)+len(xpesan))
+                                xlen2 = str(len(zxc)+len(pesan2)+len(xpesan)-1)
+                                zx = {'S':xlen, 'E':xlen2, 'M':jaka.mid}
+                                zx2.append(zx)
+                                zxc += pesan2
+                                text = xpesan + zxc + ret_ + ""
+                                #me.sendMessage(at, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
+                                me.sendMessage(at, text)
+                                me.sendImage(at, msg_dict[Id]["data"])
+                           else:
+                                ginfo = me.getGroup(at)
+                                jaka = me.getContact(msg_dict[Id]["from"])             
+                                ret_ = "╭━━━━══════════════"
+                                ret_ += "\n┣☠•➤ Pesan Dihapus"
+                                ret_ += "\n┣☠•➤  Pengirim : {}".format(str(jaka.displayName))
+                                ret_ += "\n┣☠•➤  Nama Grup : {}".format(str(ginfo.name))
+                                ret_ += "\n┣☠•➤  Waktu Dikirim : {}".format(dt_to_str(cTime_to_datetime(msg_dict[Id]["createdTime"])))
+                                ret_ += "\n┣☠•➤  Pesannya : {}".format(str(msg_dict[Id]["text"]))
+                                ret_ += "\n╰━━━━══════════════"
+                                me.sendMessage(at, str(ret_))
+                        del msg_dict[Id]
+                except Exception as e:
+                    print(e)
+            if InexBots["Unsend"] == True:
+                try:
+                    at = Rumahku
+                    Id = Musuhku
+                    if Id in msg_dict1:
+                        if msg_dict1[Id]["from"]:
+                                ginfo = me.getGroup(at)
+                                jaka = me.getContact(msg_dict1[Id]["from"])
+                                ret_ =  "「 Sticker Dihapus 」\n"
+                                ret_ = "╭━━━━══════════════"
+                                ret_ += "\n┣☠•➤ Pengirim : {}".format(str(jaka.displayName))
+                                ret_ += "\n┣☠•➤ Nama Grup : {}".format(str(ginfo.name))
+                                ret_ += "\n┣☠•➤ Waktu Ngirim : {}".format(dt_to_str(cTime_to_datetime(msg_dict1[Id]["createdTime"])))
+                                ret_ += "\n┣☠•➤ {}".format(str(msg_dict1[Id]["text"]))
+                                ret_ += "\n╰━━━━══════════════"
+                                me.sendMessage(at, str(ret_))
+                                me.sendImage(at, msg_dict1[Id]["data"])
+                        del msg_dict1[Id]
+                except Exception as e:
+                    print(e)
+
         if rank.type == 55:
             Gr = Rumahku
             try:
